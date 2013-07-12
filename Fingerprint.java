@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.*;
 
-public class Fingerprint 
+public class Fingerprint implements Serializable
 {
 	Hashtable<String,Integer> char_set;
 	int char_count;
@@ -67,6 +68,16 @@ public class Fingerprint
 			Fingerprint f  = new Fingerprint(args[0]);
 			System.out.println("Character count: " + f.getCharCount());
 			System.out.println(f);
+			
+			try
+			{
+				ObjectOutputStream objStrm = new ObjectOutputStream(new FileOutputStream("bor"));
+				objStrm.writeObject(f);
+			}
+			catch(IOException e)
+			{
+			
+			}
 		}
 		else
 		{
