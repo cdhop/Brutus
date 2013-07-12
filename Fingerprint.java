@@ -11,32 +11,32 @@ public class Fingerprint implements Serializable
 		char_count  = 0;
 		char_set = new Hashtable<String,Integer>();
 		
-		char_set.put("Z",0);
-		char_set.put("Y",0);
-		char_set.put("X",0);
-		char_set.put("W",0);
-		char_set.put("V",0);
-		char_set.put("U",0);
-		char_set.put("T",0);
-		char_set.put("S",0);
-		char_set.put("R",0);
-		char_set.put("Q",0);
-		char_set.put("P",0);
-		char_set.put("O",0);
-		char_set.put("N",0);
-		char_set.put("M",0);
-		char_set.put("L",0);
-		char_set.put("K",0);
-		char_set.put("J",0);
-		char_set.put("I",0);
-		char_set.put("H",0);
-		char_set.put("G",0);
-		char_set.put("F",0);
-		char_set.put("E",0);
-		char_set.put("D",0);
-		char_set.put("C",0);
-		char_set.put("B",0);
 		char_set.put("A",0);
+		char_set.put("B",0);
+		char_set.put("C",0);
+		char_set.put("D",0);
+		char_set.put("E",0);
+		char_set.put("F",0);
+		char_set.put("G",0);
+		char_set.put("H",0);
+		char_set.put("I",0);
+		char_set.put("J",0);
+		char_set.put("K",0);
+		char_set.put("L",0);
+		char_set.put("M",0);
+		char_set.put("N",0);
+		char_set.put("O",0);
+		char_set.put("P",0);
+		char_set.put("Q",0);
+		char_set.put("R",0);
+		char_set.put("S",0);
+		char_set.put("T",0);
+		char_set.put("U",0);
+		char_set.put("V",0);
+		char_set.put("W",0);
+		char_set.put("X",0);
+		char_set.put("Y",0);
+		char_set.put("Z",0);
 
 		message = message.toUpperCase();
 
@@ -81,7 +81,7 @@ public class Fingerprint implements Serializable
 		}
 		else
 		{
-			System.out.println("Usage: java Fingerprint.class  message");
+			System.out.println("Usage: java Fingerprint  message");
 		}
 	}
 }
