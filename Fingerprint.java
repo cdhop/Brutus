@@ -53,6 +53,13 @@ public class Fingerprint implements Serializable
                         	}
 			}
                 }
+
+		for(int i=0; i < char_set.size(); i++)
+		{
+			int count = char_set.get(i).getCount();
+			float ratio = (float)count/char_count;
+			char_set.get(i).setRatio(ratio);
+		}
 	}
 
 	public int getCharCount()
@@ -74,6 +81,7 @@ public class Fingerprint implements Serializable
 			System.out.println("Character count: " + f.getCharCount());
 			System.out.println(f);
 			
+			/*
 			try
 			{
 				ObjectOutputStream objStrm = new ObjectOutputStream(new FileOutputStream("bor"));
@@ -83,6 +91,7 @@ public class Fingerprint implements Serializable
 			{
 			
 			}
+			*/
 		}
 		else
 		{

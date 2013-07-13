@@ -4,11 +4,13 @@ public class Character implements Serializable
 {
         char ch;
         int count;
+	float ratio;
 
         public Character(char c, int x)
         {
                 ch = c;
                 count = x;
+		ratio = 0;
         }
 
         public char getCharacter()
@@ -21,13 +23,23 @@ public class Character implements Serializable
                 return count;
         }
 
+	public float getRatio()
+	{
+		return ratio;
+	}
+
         public void setCount(int x)
         {
                 count = x;
         }
 
+	public void setRatio(float r)
+	{
+		ratio = r;
+	}
+
         public String toString()
         {
-                return ch + ": " + count;
+                return ch + ": " + count + ": " + ratio;
         }
 }
