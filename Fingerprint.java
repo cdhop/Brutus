@@ -69,7 +69,6 @@ public class Fingerprint implements Serializable
 
 	public String toString()
 	{
-		// Collections.sort(char_set);
 		return char_set.toString();
 	}
 	
